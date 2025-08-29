@@ -50,7 +50,7 @@ def input2(w, wk):
     dat[id2][index] += 1
     points[id2] += add_point
 
-def input_file():
+def load_attendance_file():
     try:
         with open("attendance_weekday_500.txt", encoding='utf-8') as f:
             for _ in range(500):
@@ -92,4 +92,4 @@ def input_file():
         print("파일을 찾을 수 없습니다.")
 
 if __name__ == "__main__":
-    input_file()
+    load_attendance_file()
